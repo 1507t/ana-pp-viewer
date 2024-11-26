@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "ANA PP Viewer",
+    "version": "1.0.0",
+    "homepage_url": "https://github.com/1507t/ana-pp-viewer",
+    "description": "This extension displays the PP unit price on ANA's official website.",
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://aswbe-d.ana.co.jp/*/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "chart.json"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
