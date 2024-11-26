@@ -7,7 +7,7 @@ ANAの公式Webページ内にPP単価を表示させる拡張機能です。
 - 一番上の行に運賃種別・積算率・搭乗ポイントを表示します。
 - 価格が表示されているセルにマウスオーバーすると獲得予定PPを表示します。
 
-![screenshot of ana-pp-viewer](https://github.com/user-attachments/assets/423ba056-ecca-453a-9f28-b219d5de08c7)
+![screenshot of ana-pp-viewer](https://github.com/user-attachments/assets/26d8ec56-f6cf-401d-a0c7-d1ed61f563f4)
 
 ## インストール
 ### ダウンロード
