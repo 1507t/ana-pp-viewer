@@ -47,7 +47,7 @@ function append_result(fare_table, departure, arrival, chart) {
         let flight_sections = [[departure, arrival]];
         if(flight_element.querySelector('p.availabilityResultFlightRoute') !== null){
             const route_element = Array.from(flight_element.querySelectorAll('p.availabilityResultFlightRoute'));
-            flight_sections = route_element.map(element => Array.from(element.querySelectorAll('span')).map(span => span.textContent.trim()));
+            flight_sections = route_element.map(element => Array.from(element.children).map(c => c.textContent.trim()).filter(v => v));
         }
         const flight_miles = flight_sections.map(section => get_mile(chart, section[0], section[1]));
         console.log(`flight_miles: ${flight_miles}`);
